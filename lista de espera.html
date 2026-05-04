@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Espera | Próximamente</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d; /* Fondo oscuro profesional */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Contenedor central */
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        /* El Botón/Icono Central */
+        .cta-link {
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .cta-link:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-circle {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #00ff41 0%, #008f11 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.4);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* SVG del icono (un usuario con un signo +) */
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: #000;
+        }
+
+        .btn-text {
+            color: #00ff41;
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Decoración de fondo (Opcional) */
+        .bg-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 255, 65, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <h1>PROYECTO HIDRA</h1>
+        <p>Acceso exclusivo a la lista de espera</p>
+
+        <!-- CAMBIA TU_LINK_DE_GOOGLE_FORMS_AQUI POR TU ENLACE REAL -->
+        <a href="https://forms.gle/VrYd9qikURcXobYx8" class="cta-link">
+            <div class="icon-circle">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                </svg>
+            </div>
+            <span class="btn-text">ANOTARME</span>
+        </a>
+    </div>
+
+</body>
+</html>
